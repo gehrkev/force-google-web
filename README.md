@@ -1,8 +1,30 @@
-# force-google-web
-Simple Firefox addon to append ```&amp;udm=14``` to your Google search address (from the address bar and Google homepage), forcing it to use the 'Web' search option.
+# Force Google Web
 
-According to [this Tedium arcticle](https://tedium.co/2024/05/17/google-web-search-make-default/), using the Web view removes AI overviews, ads, and other extras, providing a cleaner, more traditional search experience.
-To do so, you need to append ```&udm=14``` to your web address. This simple addon forces that so the Web view is the default option.
+**Force Google Web** is a simple Firefox addon designed to append `&udm=14` to your Google search URL, ensuring that Google uses the 'Web' search option by default. This mode offers a cleaner, more traditional search experience by removing AI overviews, ads, and other extras.
 
-# How to use it
-To use it, simply compress both *background.js* and *manifest.json* into a zip file (it's important to zip only the files, not a directory containing it) and, from the Addons settings page, click the cog icon and open "Install Add-on From File".
+According to [this Tedium article](https://tedium.co/2024/05/17/google-web-search-make-default/), using the Web view can enhance your search experience by focusing on core search results.
+
+## Features
+- Automatically appends `&udm=14` to Google search URLs.
+- Works from the address bar and Google homepage.
+- Provides a cleaner search interface by default.
+
+## Prerequisites
+- Firefox browser.
+
+## Installation
+1. **Prepare the Files:**
+   - Make sure you have `background.js` and `manifest.json` ready.
+   
+2. **Compress the Files:**
+   - Select both `background.js` and `manifest.json`.
+   - Compress them into a ZIP file. Ensure the ZIP file contains only these files directly (not in a directory).
+
+3. **Install the Addon:**
+   - Open Firefox.
+   - Go to the Addons settings page (`about:addons`).
+   - Click the cog icon and select "Install Add-on From File".
+   - Choose the ZIP file you created and install it.
+
+## Usage
+Once installed, the addon will automatically modify Google search URLs to use the 'Web' search option. Simply search as you normally would from the address bar or the Google homepage, and enjoy a cleaner search experience.
