@@ -5,7 +5,7 @@ This is the source code of **Force Google Web**, a simple Firefox addon designed
 According to [this Tedium article](https://tedium.co/2024/05/17/google-web-search-make-default/), using the Web view can enhance your search experience by focusing on core search results.
 
 ## Features
-- Automatically appends `&udm=14` to Google**.com** search URLs.
+- Automatically appends `&udm=14` to Google.**com** search URLs.
 - Works from the address bar and Google homepage.
 - Provides a cleaner search interface by default.
 
