@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Force Google Web Search",
-  "version": "1.1",
+  "version": "1.1.1",
   "description": "Simple addon to append &udm=14 to your Google search address, forcing it to use the 'Web' search.",
   "permissions": [
     "webRequest",
