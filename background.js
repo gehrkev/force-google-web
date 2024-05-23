@@ -1,15 +1,11 @@
-// background.js
-browser.webRequest.onBeforeRequest.addListener(
-    function(details) {
+browser.webRequest.onBeforeRequest.addEventListener(
+    function (details) {
         let url = new URL(details.url);
 
-        // Modify the search URL only if it matches Google search
         if (url.hostname === "www.google.com" && url.pathname === "/search") {
-            // Check if &udm=14 is already present
-            if (!url.search.includes('&udm=14')) {
-                // Append &udm=14 to the existing query parameters
+            if (!url.search.includes('udm=14')) {
                 url.searchParams.append('udm', '14');
-                return { redirectUrl: url.toString() };
+                return {redirectUrl: url.toString()};
             }
         }
     },
