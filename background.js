@@ -1,4 +1,4 @@
-browser.webRequest.onBeforeRequest.addEventListener(
+browser.webRequest.onBeforeRequest.addListener(
     function (details) {
         let url = new URL(details.url);
 
